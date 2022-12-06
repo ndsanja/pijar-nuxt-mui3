@@ -1,3 +1,3 @@
 <template>
-  <h1 class="text-2xl">Hello World</h1>
+  <h1 class="on-primary-text display-large">Hello World</h1>
 </template>
