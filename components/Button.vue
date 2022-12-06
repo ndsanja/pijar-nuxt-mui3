@@ -1,22 +1,26 @@
 <script setup lang="ts">
-const { variant, size, color, startIcon, endIcon } = withDefaults(defineProps<{
+
+type Props = {
   variant?: 'filled' | 'tonal' | 'bordered' | 'text' | 'elevated'
   size?: 'small' | 'medium' | 'large' | 'extra-large'
   color?: 'primary' | 'secondary' | 'tertiary' | 'error'
   startIcon?: any
   endIcon?: any
-}>(), {
+}
+
+const { variant, size, color, startIcon, endIcon } = withDefaults(defineProps<Props>(), {
   variant: 'filled',
   color: 'primary',
   size: 'medium'
 })
+
 </script>
 
 <template>
   <button :class="tw(`
-  h-[40px]
-  ${startIcon && `pl-[16px] pr-[24px]`}
-  ${endIcon && `pl-[24px] pr-[16px]`}
+  h-10
+  ${startIcon && `pl-4 pr-6`}
+  ${endIcon && `pl-6 pr-4`}
   rounded-full
   label-large
   text-center
@@ -57,8 +61,8 @@ const { variant, size, color, startIcon, endIcon } = withDefaults(defineProps<{
   }
   
   `)">
-    <span v-if="startIcon" class="pr-[8px] text-[18px]">{{ startIcon }}</span>
+    <span v-if="startIcon" class="pr-2 text-lg">{{ startIcon }}</span>
     <slot />
-    <span v-if="endIcon" class="pl-[8px] text-[18px]">{{ endIcon }}</span>
+    <span v-if="endIcon" class="pl-2 text-lg">{{ endIcon }}</span>
   </button>
 </template>
