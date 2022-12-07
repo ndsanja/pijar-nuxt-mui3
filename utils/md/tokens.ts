@@ -81,265 +81,134 @@ export const tokens = {
         },
       },
     },
-    sys: {
-      color: {
-        primary: {
-          light: '#6750A4',
-          dark: '#D0BCFF',
-          container: {
-            light: '#EADDFF',
-            dark: '#4F378B',
-          },
+    typescale: {
+      display: {
+        large: {
+          'font-family-name': 'Roboto',
+          'font-family-style': 'Regular',
+          'font-weight': '400px',
+          'font-size': '57px',
+          'line-height': '64px',
+          'letter-spacing': '-0.25px',
         },
-        secondary: {
-          light: '#625B71',
-          dark: '#CCC2DC',
-          container: {
-            light: '#E8DEF8',
-            dark: '#4A4458',
-          },
+        medium: {
+          'font-family-name': 'Roboto',
+          'font-family-style': 'Regular',
+          'font-weight': '400px',
+          'font-size': '45px',
+          'line-height': '52px',
+          'letter-spacing': '0px',
         },
-        tertiary: {
-          light: '#7D5260',
-          dark: '#EFB8C8',
-          container: {
-            light: '#FFD8E4',
-            dark: '#633B48',
-          },
-        },
-        error: {
-          light: '#B3261E',
-          dark: '#F2B8B5',
-          container: {
-            light: '#F9DEDC',
-            dark: '#8C1D18',
-          },
-        },
-        outline: {
-          light: '#79747E',
-          dark: '#938F99',
-          variant: {
-            light: '#CAC4D0',
-            dark: '#49454F',
-          },
-        },
-        background: {
-          light: '#FFFBFE',
-          dark: '#1C1B1F',
-        },
-        surface: {
-          light: '#FFFBFE',
-          dark: '#1C1B1F',
-          variant: {
-            light: '#E7E0EC',
-            dark: '#49454F',
-          },
-          tint: {
-            light: '#6750A4',
-            dark: '#D0BCFF',
-          },
-        },
-        inverse: {
-          primary: {
-            light: '#D0BCFF',
-            dark: '#6750A4',
-          },
-          surface: {
-            light: '#313033',
-            dark: '#E6E1E5',
-          },
-          on: {
-            surface: {
-              light: '#F4EFF4',
-              dark: '#313033',
-            },
-          },
-        },
-        shadow: {
-          light: '#000000',
-          dark: '#000000',
-        },
-        scrim: {
-          light: '#000000',
-          dark: '#000000',
-        },
-        on: {
-          primary: {
-            light: '#FFFFFF',
-            dark: '#381E72',
-          },
-          container: {
-            light: '#21005D',
-            dark: '#EADDFF',
-          },
-          secondary: {
-            light: '#FFFFFF',
-            dark: '#332D41',
-            container: {
-              light: '#1D192B',
-              dark: '#E8DEF8',
-            },
-          },
-          tertiary: {
-            light: '#FFFFFF',
-            dark: '#492532',
-            container: {
-              light: '#31111D',
-              dark: '#FFD8E4',
-            },
-          },
-          error: {
-            light: '#FFFFFF',
-            dark: '#601410',
-
-            container: {
-              light: '#410E0B',
-              dark: '#F9DEDC',
-            },
-          },
-          background: {
-            light: '#1C1B1F',
-            dark: '#E6E1E5',
-          },
-          surface: {
-            light: '#1C1B1F',
-            dark: '#E6E1E5',
-            variant: {
-              light: '#49454F',
-              dark: '#CAC4D0',
-            },
-          },
+        small: {
+          'font-family-name': 'Roboto',
+          'font-family-style': 'Regular',
+          'font-weight': '400px',
+          'font-size': '36px',
+          'line-height': '44px',
+          'letter-spacing': '0px',
         },
       },
-      typescale: {
-        display: {
-          large: {
-            'font-family-name': 'Roboto',
-            'font-family-style': 'Regular',
-            'font-weight': '400px',
-            'font-size': '57px',
-            'line-height': '64px',
-            'letter-spacing': '-0.25px',
-          },
-          medium: {
-            'font-family-name': 'Roboto',
-            'font-family-style': 'Regular',
-            'font-weight': '400px',
-            'font-size': '45px',
-            'line-height': '52px',
-            'letter-spacing': '0px',
-          },
-          small: {
-            'font-family-name': 'Roboto',
-            'font-family-style': 'Regular',
-            'font-weight': '400px',
-            'font-size': '36px',
-            'line-height': '44px',
-            'letter-spacing': '0px',
-          },
+      headline: {
+        large: {
+          'font-family-name': 'Roboto',
+          'font-family-style': 'Regular',
+          'font-weight': '400px',
+          'font-size': '32px',
+          'line-height': '40px',
+          'letter-spacing': '0px',
         },
-        headline: {
-          large: {
-            'font-family-name': 'Roboto',
-            'font-family-style': 'Regular',
-            'font-weight': '400px',
-            'font-size': '32px',
-            'line-height': '40px',
-            'letter-spacing': '0px',
-          },
-          medium: {
-            'font-family-name': 'Roboto',
-            'font-family-style': 'Regular',
-            'font-weight': '400px',
-            'font-size': '28px',
-            'line-height': '36px',
-            'letter-spacing': '0px',
-          },
-          small: {
-            'font-family-name': 'Roboto',
-            'font-family-style': 'Regular',
-            'font-weight': '400px',
-            'font-size': '24px',
-            'line-height': '32px',
-            'letter-spacing': '0px',
-          },
+        medium: {
+          'font-family-name': 'Roboto',
+          'font-family-style': 'Regular',
+          'font-weight': '400px',
+          'font-size': '28px',
+          'line-height': '36px',
+          'letter-spacing': '0px',
         },
-        body: {
+        small: {
+          'font-family-name': 'Roboto',
+          'font-family-style': 'Regular',
+          'font-weight': '400px',
+          'font-size': '24px',
+          'line-height': '32px',
+          'letter-spacing': '0px',
+        },
+      },
+      body: {
+        large: {
+          'font-family-name': 'Roboto',
+          'font-family-style': 'Regular',
+          'font-weight': '400px',
+          'font-size': '16px',
+          'line-height': '24px',
+          'letter-spacing': '0.50px',
+        },
+        medium: {
+          'font-family-name': 'Roboto',
+          'font-family-style': 'Regular',
+          'font-weight': '400px',
+          'font-size': '14px',
+          'line-height': '20px',
+          'letter-spacing': '0.25px',
+        },
+        small: {
+          'font-family-name': 'Roboto',
+          'font-family-style': 'Regular',
+          'font-weight': '400px',
+          'font-size': '12px',
+          'line-height': '16px',
+          'letter-spacing': '0.40px',
+        },
+        label: {
           large: {
             'font-family-name': 'Roboto',
-            'font-family-style': 'Regular',
-            'font-weight': '400px',
-            'font-size': '16px',
-            'line-height': '24px',
-            'letter-spacing': '0.50px',
-          },
-          medium: {
-            'font-family-name': 'Roboto',
-            'font-family-style': 'Regular',
-            'font-weight': '400px',
+            'font-family-style': 'Medium',
+            'font-weight': '500px',
             'font-size': '14px',
             'line-height': '20px',
-            'letter-spacing': '0.25px',
+            'letter-spacing': '0.10px',
+          },
+          medium: {
+            'font-family-name': 'Roboto',
+            'font-family-style': 'Medium',
+            'font-weight': '500px',
+            'font-size': '12px',
+            'line-height': '16px',
+            'letter-spacing': '0.50px',
           },
           small: {
             'font-family-name': 'Roboto',
+            'font-family-style': 'Medium',
+            'font-weight': '500px',
+            'font-size': '11px',
+            'line-height': '16px',
+            'letter-spacing': '0.50px',
+          },
+        },
+        title: {
+          large: {
+            'font-family-name': 'Roboto',
             'font-family-style': 'Regular',
             'font-weight': '400px',
-            'font-size': '12px',
-            'line-height': '16px',
-            'letter-spacing': '0.40px',
+            'font-size': '22px',
+            'line-height': '28px',
+            'letter-spacing': '0px',
           },
-          label: {
-            large: {
-              'font-family-name': 'Roboto',
-              'font-family-style': 'Medium',
-              'font-weight': '500px',
-              'font-size': '14px',
-              'line-height': '20px',
-              'letter-spacing': '0.10px',
-            },
-            medium: {
-              'font-family-name': 'Roboto',
-              'font-family-style': 'Medium',
-              'font-weight': '500px',
-              'font-size': '12px',
-              'line-height': '16px',
-              'letter-spacing': '0.50px',
-            },
-            small: {
-              'font-family-name': 'Roboto',
-              'font-family-style': 'Medium',
-              'font-weight': '500px',
-              'font-size': '11px',
-              'line-height': '16px',
-              'letter-spacing': '0.50px',
-            },
+          medium: {
+            'font-family-name': 'Roboto',
+            'font-family-style': 'Medium',
+            'font-weight': '500px',
+            'font-size': '16px',
+            'line-height': '24px',
+            'letter-spacing': '0.15px',
           },
-          title: {
-            large: {
-              'font-family-name': 'Roboto',
-              'font-family-style': 'Regular',
-              'font-weight': '400px',
-              'font-size': '22px',
-              'line-height': '28px',
-              'letter-spacing': '0px',
-            },
-            medium: {
-              'font-family-name': 'Roboto',
-              'font-family-style': 'Medium',
-              'font-weight': '500px',
-              'font-size': '16px',
-              'line-height': '24px',
-              'letter-spacing': '0.15px',
-            },
-            small: {
-              'font-family-name': 'Roboto',
-              'font-family-style': 'Medium',
-              'font-weight': '500px',
-              'font-size': '14px',
-              'line-height': '20px',
-              'letter-spacing': '0.10px',
-            },
+          small: {
+            'font-family-name': 'Roboto',
+            'font-family-style': 'Medium',
+            'font-weight': '500px',
+            'font-size': '14px',
+            'line-height': '20px',
+            'letter-spacing': '0.10px',
           },
         },
       },

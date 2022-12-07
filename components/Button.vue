@@ -26,40 +26,35 @@ const { variant, size, color, startIcon, endIcon } = withDefaults(defineProps<Pr
   text-center
   align-middle
   disabled:opacity-20
+  disabled:bg-md-sys-color-on-surface-light/[.12]
+  dark:disabled:bg-md-sys-color-on-surface-dark/[.12]
+  disabled:text-md-sys-color-on-surface-light/[.38]
+  dark:disabled:text-md-sys-color-on-surface-dark/[.38]
 
   ${color === 'primary' && `
-  primary
-  disabled:on-surface
-  disabled:!bg-opacity-10
-  on-primary-text
-  disabled:on-surface-text
-  disabled:!text-opacity-40`
-  }
+  bg-md-sys-color-primary-light
+  dark:bg-md-sys-color-primary-dark
+  text-md-sys-color-on-primary-light
+  dark:text-md-sys-color-on-primary-dark
+  `}
   ${color === 'secondary' && `
-  secondary
-  disabled:on-surface
-  disabled:!bg-opacity-10
-  on-secondary-text
-  disabled:on-surface-text
-  disabled:!text-opacity-40`
-  }
+  bg-md-sys-color-secondary-light
+  dark:bg-md-sys-color-secondary-dark
+  text-md-sys-color-on-secondary-light
+  dark:text-md-sys-color-on-secondary-dark
+  `}
   ${color === 'tertiary' && `
-  tertiary
-  disabled:on-surface
-  disabled:!bg-opacity-10
-  on-tertiary-text
-  disabled:on-surface-text
-  disabled:!text-opacity-40`
-  }
+  bg-md-sys-color-tertiary-light
+  dark:bg-md-sys-color-tertiary-dark
+  text-md-sys-color-on-tertiary-light
+  dark:text-md-sys-color-on-tertiary-dark
+  `}
   ${color === 'error' && `
-  error
-  disabled:on-surface
-  disabled:!bg-opacity-10
-  on-error-text
-  disabled:on-surface-text
-  disabled:!text-opacity-40`
-  }
-  
+  bg-md-sys-color-error-light
+  dark:bg-md-sys-color-error-dark
+  text-md-sys-color-on-error-light
+  dark:text-md-sys-color-on-error-dark
+  `}
   `)">
     <span v-if="startIcon" class="pr-2 text-lg">{{ startIcon }}</span>
     <slot />
